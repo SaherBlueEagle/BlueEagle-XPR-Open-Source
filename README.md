@@ -12,7 +12,7 @@ This is a cross platform RAT tool [Android RAT] [Windows RAT] [Linux RAT] [MAC R
 
 </p>
 
-
+Facebook : you can easily search facebook using this 3Word Nickname ;) 
  
 
 # 🏳 This is For Educational Purposes Only ! and User is responsible for his usage of this Tool  🔞
