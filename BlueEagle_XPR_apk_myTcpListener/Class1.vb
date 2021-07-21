@@ -1,12 +1,5 @@
 ﻿Imports System.Net
 Imports System.Net.Sockets
-'##################################################
-'################### CODED  #######################
-'##################### BY #########################
-'############### Saher Blue Eagle  ################
-'###############  XPR OPEN SOURCE  ################
-'##################################################
-'##################################################
 Public Class SocketServer
     Private S As TcpListener
     Sub stops(ByVal Pp As Integer)
@@ -40,7 +33,6 @@ Public Class SocketServer
         Try
            
             s = Strings.Space(1) & Syn & s & Syn   '.   Strings.Space(1) &
-            'MsgBox(s)
             SK(sock).Send(SBB(s))
 
         Catch ex As Exception

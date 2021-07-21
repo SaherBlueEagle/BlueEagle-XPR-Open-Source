@@ -82,14 +82,13 @@ Partial Class Form1
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.Panel1.ForeColor = System.Drawing.Color.Lime
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(907, 67)
@@ -130,7 +129,7 @@ Partial Class Form1
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.Black
+        Me.Panel2.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.Button5)
@@ -139,7 +138,6 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel2.ForeColor = System.Drawing.Color.Lime
         Me.Panel2.Location = New System.Drawing.Point(0, 377)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(907, 63)
@@ -158,7 +156,6 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -171,7 +168,6 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -184,7 +180,6 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -197,7 +192,6 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -210,7 +204,6 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -239,10 +232,8 @@ Partial Class Form1
         '
         'ListBox1
         '
-        Me.ListBox1.BackColor = System.Drawing.Color.Black
         Me.ListBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListBox1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.ListBox1.ForeColor = System.Drawing.Color.Lime
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 15
         Me.ListBox1.Location = New System.Drawing.Point(0, 0)
@@ -413,9 +404,9 @@ Partial Class Form1
         '
         'CameraManagerToolStripMenuItem
         '
-        Me.CameraManagerToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.CameraManagerToolStripMenuItem.BackgroundImage = CType(resources.GetObject("CameraManagerToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.CameraManagerToolStripMenuItem.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CameraManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Lime
+        Me.CameraManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.CameraManagerToolStripMenuItem.Image = CType(resources.GetObject("CameraManagerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.CameraManagerToolStripMenuItem.Name = "CameraManagerToolStripMenuItem"
         Me.CameraManagerToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
@@ -423,9 +414,9 @@ Partial Class Form1
         '
         'FileManagerToolStripMenuItem
         '
-        Me.FileManagerToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.FileManagerToolStripMenuItem.BackgroundImage = CType(resources.GetObject("FileManagerToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.FileManagerToolStripMenuItem.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FileManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Lime
+        Me.FileManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.FileManagerToolStripMenuItem.Image = CType(resources.GetObject("FileManagerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.FileManagerToolStripMenuItem.Name = "FileManagerToolStripMenuItem"
         Me.FileManagerToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
@@ -433,9 +424,9 @@ Partial Class Form1
         '
         'SMSManagerToolStripMenuItem
         '
-        Me.SMSManagerToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.SMSManagerToolStripMenuItem.BackgroundImage = CType(resources.GetObject("SMSManagerToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.SMSManagerToolStripMenuItem.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SMSManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Lime
+        Me.SMSManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.SMSManagerToolStripMenuItem.Image = CType(resources.GetObject("SMSManagerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.SMSManagerToolStripMenuItem.Name = "SMSManagerToolStripMenuItem"
         Me.SMSManagerToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
@@ -443,9 +434,9 @@ Partial Class Form1
         '
         'KeyloggerToolStripMenuItem
         '
-        Me.KeyloggerToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.KeyloggerToolStripMenuItem.BackgroundImage = CType(resources.GetObject("KeyloggerToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.KeyloggerToolStripMenuItem.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.KeyloggerToolStripMenuItem.ForeColor = System.Drawing.Color.Lime
+        Me.KeyloggerToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.KeyloggerToolStripMenuItem.Image = CType(resources.GetObject("KeyloggerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.KeyloggerToolStripMenuItem.Name = "KeyloggerToolStripMenuItem"
         Me.KeyloggerToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
@@ -453,9 +444,9 @@ Partial Class Form1
         '
         'CallsManagerToolStripMenuItem
         '
-        Me.CallsManagerToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.CallsManagerToolStripMenuItem.BackgroundImage = CType(resources.GetObject("CallsManagerToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.CallsManagerToolStripMenuItem.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CallsManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Lime
+        Me.CallsManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.CallsManagerToolStripMenuItem.Image = CType(resources.GetObject("CallsManagerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.CallsManagerToolStripMenuItem.Name = "CallsManagerToolStripMenuItem"
         Me.CallsManagerToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
@@ -463,9 +454,9 @@ Partial Class Form1
         '
         'ApplicationsManagerToolStripMenuItem
         '
-        Me.ApplicationsManagerToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.ApplicationsManagerToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ApplicationsManagerToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
         Me.ApplicationsManagerToolStripMenuItem.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ApplicationsManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Lime
+        Me.ApplicationsManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.ApplicationsManagerToolStripMenuItem.Image = CType(resources.GetObject("ApplicationsManagerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ApplicationsManagerToolStripMenuItem.Name = "ApplicationsManagerToolStripMenuItem"
         Me.ApplicationsManagerToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
@@ -473,8 +464,8 @@ Partial Class Form1
         '
         'ContactsManagerToolStripMenuItem
         '
-        Me.ContactsManagerToolStripMenuItem.BackColor = System.Drawing.Color.Black
-        Me.ContactsManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Lime
+        Me.ContactsManagerToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ContactsManagerToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.ContactsManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.ContactsManagerToolStripMenuItem.Image = CType(resources.GetObject("ContactsManagerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ContactsManagerToolStripMenuItem.Name = "ContactsManagerToolStripMenuItem"
         Me.ContactsManagerToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
@@ -482,8 +473,8 @@ Partial Class Form1
         '
         'ChatManagerToolStripMenuItem
         '
-        Me.ChatManagerToolStripMenuItem.BackColor = System.Drawing.Color.Black
-        Me.ChatManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Lime
+        Me.ChatManagerToolStripMenuItem.BackgroundImage = CType(resources.GetObject("ChatManagerToolStripMenuItem.BackgroundImage"), System.Drawing.Image)
+        Me.ChatManagerToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.ChatManagerToolStripMenuItem.Image = CType(resources.GetObject("ChatManagerToolStripMenuItem.Image"), System.Drawing.Image)
         Me.ChatManagerToolStripMenuItem.Name = "ChatManagerToolStripMenuItem"
         Me.ChatManagerToolStripMenuItem.Size = New System.Drawing.Size(214, 22)
@@ -491,7 +482,6 @@ Partial Class Form1
         '
         'HostreplaceToolStripMenuItem
         '
-        Me.HostreplaceToolStripMenuItem.BackColor = System.Drawing.Color.Black
         Me.HostreplaceToolStripMenuItem.Enabled = False
         Me.HostreplaceToolStripMenuItem.Image = Global.BlueEagleXPR.My.Resources.Resources.Redo
         Me.HostreplaceToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -501,8 +491,8 @@ Partial Class Form1
         '
         'EndConnectionToolStripMenuItem1
         '
-        Me.EndConnectionToolStripMenuItem1.BackColor = System.Drawing.Color.Black
-        Me.EndConnectionToolStripMenuItem1.ForeColor = System.Drawing.Color.Lime
+        Me.EndConnectionToolStripMenuItem1.BackgroundImage = CType(resources.GetObject("EndConnectionToolStripMenuItem1.BackgroundImage"), System.Drawing.Image)
+        Me.EndConnectionToolStripMenuItem1.ForeColor = System.Drawing.Color.Black
         Me.EndConnectionToolStripMenuItem1.Image = CType(resources.GetObject("EndConnectionToolStripMenuItem1.Image"), System.Drawing.Image)
         Me.EndConnectionToolStripMenuItem1.Name = "EndConnectionToolStripMenuItem1"
         Me.EndConnectionToolStripMenuItem1.Size = New System.Drawing.Size(214, 22)
@@ -588,15 +578,13 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(907, 440)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.ForeColor = System.Drawing.Color.Lime
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Blue Eagle XPR (BLACK MODE) [ Cross Platform Remote Access Trojan ]"
+        Me.Text = "Blue Eagle XPR  [ Cross Platform Remote Access Trojan ]"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
